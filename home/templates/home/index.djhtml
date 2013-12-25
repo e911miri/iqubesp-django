@@ -1,0 +1,42 @@
+{% extends 'base.djhtml' %}
+{% block content %}
+<section class="container">
+	<article class="col-md-8 col-sm-12">
+		<h1>{{ main }}</h1>
+		<!--  -->
+		<iframe width="100%" height="360" src="//www.youtube.com/embed/lK_cdkpazjI?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+	</article>
+	<aside class="col-md-4 col-sm-12">
+		<blockquote>
+			<em>
+				<p>{{block1}}</p>
+				<p>{{block2}}</p>
+				<p>{{block3}}</p>
+		  </em>
+		</blockquote>
+	</aside>
+</section>
+<hr>
+<section class="container">
+	<article class="col-md-4">
+		<img src="http://placehold.it/300x250">
+		<h4>Designed By Nigerians<br>For Nigerians</h4>
+	</article>
+	<article class="col-md-4">
+		<img src="http://placehold.it/300x250">
+		<h4>Flexibility Counts<br>Online Mentors</h4>
+	</article>
+	<article class="col-md-4">
+		<img src="http://placehold.it/300x250">
+		<h4>Learning is fun<br>We love games!!</h4>
+	</article>
+</section>
+<hr>
+<section class="container">
+	<h3 class="page-header">Latest Offerings <small>- Here's what we call </small><font color="red">Hot</font></h3>
+	<article class="col-md-6 col-sm-12">
+		
+	</article>
+	<article class="col-md-6 col-sm-12"></article>
+</section>
+{% endblock %}
