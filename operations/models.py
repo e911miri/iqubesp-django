@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 # Create your models here.
 
@@ -11,5 +12,12 @@ class Course(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(unique=True)
     
+    class Meta:
+        verbose_name_plural = "Courses"
+    
     def __unicode__(self):
         return self.name
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(unicode(self.name))
+        super(Course, self).save(*args, **kwargs)
