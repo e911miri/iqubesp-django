@@ -27,14 +27,14 @@
         		<li class=""><a href="/courses">Courses</a></li>
                 <li><a href="mailto:detan.oyedele@gmail.com">Contact Us</a></li>
         	</ul>        
-          <ul class="nav navbar-nav navbar-right">
-            {% if user.is_authenticated %}
-			    <li class="active">Welcome, {{ user.username }}. Thanks for logging in.</li>
-			{% else %}
-			    <li class="active">Welcome, new user. Please log in.</li>
-			{% endif %}
-			
-          </ul>
+	          <ul class="nav navbar-nav navbar-right">
+	            {% if user.is_authenticated %}
+				    <li class=""><a href="#">Welcome, {{ user.username }}. Thanks for logging in.</a></li>
+				{% else %}
+				    <li class=""><a href="#">Welcome, new user. Please log in.</a></li>
+				{% endif %}
+				
+	          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </header>
