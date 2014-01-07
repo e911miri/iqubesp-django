@@ -1,0 +1,45 @@
+{% extends "base.djhtml" %}
+
+{% block content %}
+
+{% if form.errors %}
+<p>
+    Your username and password didn't match. Please try again.
+</p>
+{% endif %}
+
+<section class="container orange-bg">
+	<h3 class="offset-2">SDP Member Login Portal</h3>
+	<form method="post" class="form-horizontal" role="form" action="{% url 'django.contrib.auth.views.login' %}">
+	    {% csrf_token %}
+	  <div class="form-group">
+	    <label for="inputEmail3" class="col-sm-2 control-label">{{ form.username.label_tag }}</label>
+	    <div class="col-sm-10">
+	      {{ form.username }}
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="inputPassword3" class="col-sm-2 control-label">{{ form.password.label_tag }}</label>
+	    <div class="col-sm-10">
+	      {{ form.password }}
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <div class="checkbox">
+	        <label>
+	          <input type="checkbox"> Remember me
+	        </label>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <input type="submit" value="login" />
+	    <input type="hidden" name="next" value="{{ next }}" />
+	    </div>
+	  </div>
+	</form>
+</section>
+
+{% endblock %}

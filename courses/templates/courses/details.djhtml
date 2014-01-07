@@ -1,0 +1,26 @@
+{% extends 'base.djhtml' %}
+{% block content %}
+{% if course %}
+<div class="container">
+	<div class="col-md-8 col-sm-12">
+		<h3 style="font-size: 2.3em; color: grey "><small>Course Title: </small>{{course.name}}</h3>
+		<h4 style="font-size: 1.8em; color: lightblue "><small>Duration: </small>6 weeks</h3>
+        <p class="lead">{{course.desc}}</p>        
+    </div>
+	<div class="col-md-4 col-sm-12">
+		{% if user %}
+		  {% if user_has_joined_class %}
+		      <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
+		  {% else %}
+		      <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
+		  {% endif %}
+		  
+		{% else %}
+	        <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
+		{% endif %}
+	</div>
+</div>
+{% else %}
+Error Between Keyboard and Chair!!!
+{% endif %}
+{% endblock %}

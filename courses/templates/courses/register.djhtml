@@ -1,0 +1,5 @@
+{% extends 'base.djhtml' %}
+This page requires that you are logged in
+If you are not logged in, you are automatically requested to do so
+Upon which you will either be prompted to register for the course.
+If you have registered for the course, you will be alerted and rediected to the course page.

@@ -6,7 +6,7 @@
 		<!--  -->
 		<iframe width="100%" height="360" src="//www.youtube.com/embed/lK_cdkpazjI?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 	</article>
-	<aside class="col-md-4 col-sm-12">
+	<aside class="col-md-4 col-sm-12 orange-bg well">
 		<blockquote>
 			<em>
 				<p>{{block1}}</p>
@@ -17,16 +17,16 @@
 	</aside>
 </section>
 <hr>
-<section class="container">
-	<article class="col-md-4">
+<section class="container red">
+	<article class="col-md-4 blue-bg">
 		<img src="http://placehold.it/300x250">
 		<h4>Designed By Nigerians<br>For Nigerians</h4>
 	</article>
-	<article class="col-md-4">
+	<article class="col-md-4 blue2-bg">
 		<img src="http://placehold.it/300x250">
 		<h4>Flexibility Counts<br>Online Mentors</h4>
 	</article>
-	<article class="col-md-4">
+	<article class="col-md-4 teal-bg">
 		<img src="http://placehold.it/300x250">
 		<h4>Learning is fun<br>We love games!!</h4>
 	</article>
