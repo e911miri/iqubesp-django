@@ -6,9 +6,12 @@ from operations.models import Course
 class StudentCourse(models.Model):
     student = models.ForeignKey(User)
     course = models.ForeignKey(Course)
-    date_joined = models.DateField()
+    date_joined = models.DateField(auto_now_add=True)
     invite_reason = models.CharField(max_length=64)
     paid = models.BooleanField()
+    
+    def __unicode__(self):
+        return self.course.name
     
 class Payment(models.Model):
     student = models.ForeignKey(StudentCourse)
