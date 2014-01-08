@@ -1,10 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from operations.models import Course
+from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):
     if request.user.is_authenticated():
+        if request.user.is_superuser:
+            return redirect('/admin')
         context = {
             'courses': Course.objects.all(),
             'tasks': None,
@@ -36,6 +39,24 @@ def login_view(request):
             return None
     else:
         return render(request, "auth/login.djhtml", {})
+
+def register_view(request):
+    if request.POST:        
+        username = request.POST['username']
+        email = request.POST['email']
+        password = request.POST['password']
+        user = User.objects.create_user(username, email, password)
+        if user is not None:
+            if user.is_active:
+                login(request, user)
+                # Redirect to a success page.
+            else:
+                return render(request, "auth/login.djhtml", {})
+        else:
+            # Return an 'invalid login' error message.
+            return None
+    else:
+        return render(request, "auth/register.djhtml", {})
 
 def logout_view(request):
     logout(request)
