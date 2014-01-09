@@ -4,6 +4,21 @@
 	<div class="row"></div>
 	<div class="col-md-8">
 		<h3 class="page-header">SKILLS YOU ARE LEARNING</h3>
+		<table class="table table-bordered table-stripped">
+			<caption>Course Details</caption>
+			<thead>
+				<th>Name</th>
+				<th>Payment Collected</th>
+			</thead>
+			<tbody>
+				{% for s in scourses %}
+				    <tr>
+				    	<td>{{s}}</td>
+				    	<td>{{s.paid}}</td>
+				    </tr>            
+                {% endfor %}
+			</tbody>			
+		</table>
 	</div>
 	<div class="col-md-4" style="border-left: 1px solid green">
 		<h3 class="page-header">Popular Courses</h3>

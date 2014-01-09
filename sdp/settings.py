@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'grappelli',
+#     'registration_defaults',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +43,7 @@ INSTALLED_APPS = (
     'students',
     'south',
     'home',
+    'registration',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -82,7 +84,7 @@ USE_L10N = True
 USE_TZ = True
 
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+# DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -111,3 +113,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 GRAPPELLI_ADMIN_TITLE = "IQube's Skill Development Platform"
 
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), "templates")

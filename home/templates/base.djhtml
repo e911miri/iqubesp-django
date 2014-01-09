@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">iqube[sdp]</a>
+          <a class="navbar-brand" href="/">iqube => [sdp]</a>
         </div>
         <div class="navbar-collapse collapse">
         	<ul class="nav navbar-nav ">
@@ -31,7 +31,7 @@
 	            {% if user.is_authenticated %}
 				    <li class=""><a href="#">Welcome, {{ user.username }}. Thanks for logging in.</a></li>
 				{% else %}
-				    <li class=""><a href="#">Welcome, new user. Please log in.</a></li>
+				    <li class=""><a href="/students/login">Welcome, new user. Please log in.</a></li>
 				{% endif %}
 				
 	          </ul>

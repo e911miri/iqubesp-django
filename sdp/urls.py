@@ -6,10 +6,11 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'home.views.index', name='home'),
-    url(r'^accounts/profile/$', 'home.views.index', name='profile'),
-    url(r'^login/(\w*)', 'home.views.login', name='login'),
+#     url(r'^accounts/profile/$', 'home.views.index', name='profile'),
+#     url(r'^login/(\w*)', 'home.views.login', name='login'),
     
     
+    (r'^accounts/', include('registration.backends.default.urls')),
     url(r'^courses/', include('courses.urls')),
     url(r'^students/', include('students.urls')),
     (r'^grappelli/', include('grappelli.urls')), # grappelli URLS
