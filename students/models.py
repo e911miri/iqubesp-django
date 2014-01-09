@@ -10,6 +10,18 @@ class StudentCourse(models.Model):
     invite_reason = models.CharField(max_length=64)
     paid = models.BooleanField()
     
+    def save(self, *args, **kwargs):
+        if self.course_is_unique_for_student() == True:
+            super(StudentCourse, self).save(*args, **kwargs)
+    
+    def course_is_unique_for_student(self):
+        c = StudentCourse.objects.filter(
+                                         student=self.student, 
+                                         course = self.course)
+        if c.count() > 0:
+            return False
+        return True
+    
     def __unicode__(self):
         return self.course.name
     

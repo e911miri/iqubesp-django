@@ -10,7 +10,7 @@ from students.models import StudentCourse
 @login_required
 def home(request):
     context = {
-            'courses': Course.objects.all(),
+            'courses': Course.objects.filter(),
             'scourses': StudentCourse.objects.filter(student=request.user),
             'tasks': None,
         }

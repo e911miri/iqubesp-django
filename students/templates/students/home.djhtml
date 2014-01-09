@@ -14,7 +14,7 @@
 				{% for s in scourses %}
 				    <tr>
 				    	<td>{{s}}</td>
-				    	<td>{{s.paid}}</td>
+				    	<td><input type="checkbox" disabled="disabled" {%if s.paid%}checked{%else%}{%endif%}></td>
 				    </tr>            
                 {% endfor %}
 			</tbody>			
