@@ -8,11 +8,7 @@ def index(request):
     if request.user.is_authenticated():
         if request.user.is_superuser:
             return redirect('/admin')
-        context = {
-            'courses': Course.objects.all(),
-            'tasks': None,
-        }
-        template_path = "home/student_home.djhtml"
+        return redirect('/students')
     else:        
         context= {
             'main': "The Journey of an IT GURU Statts with one skill",
