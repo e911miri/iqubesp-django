@@ -24,7 +24,12 @@
     <a href="{{ register_url }}">Need an account</a>?{% endblocktrans %}</p>
 
 <input type="submit" value="{% trans "login" %}" />
+{% if next %}
 <input type="hidden" name="next" value="{{ next }}" />
+{% else %}
+<input type="hidden" name="next" value="/students/" />
+{% endif %}
+
 </form>
 
 {% endblock %}
