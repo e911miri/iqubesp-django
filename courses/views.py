@@ -2,14 +2,16 @@ from django.shortcuts import render, redirect
 from operations.models import Course
 from django.contrib.auth.decorators import login_required
 from students.models import StudentCourse
+from django.views import generic
 
 # Create your views here.
-def index(request):
-    context = {
-       'courses': Course.objects.all()
-    }
-    template_path = "courses/index.djhtml"
-    return render(request, template_path, context)
+class index(generic.ListView):
+    template_name = 'courses/index.html'
+    context_object_name = 'courses'
+
+    def get_queryset(self):
+        """Return the last five published polls."""
+        return Course.objects.all()
 
 def details(request, course_id):
     context = {
