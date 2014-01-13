@@ -169,7 +169,7 @@
                     <div class="service-thumb">
                         <a class="icon-bolt service-icon" href="#"></a>
                         <div class="inner">
-                            <h3 class="title">Live Mentoring with Skype</h3>
+                            <h3 class="title">Mentoring with Skype</h3>
                             <p class="desciption">Our trainees have hangout with us on skype every week, this helps us know them personally, find out what problems they are going through and also encourage them to participate in confidence building excercises</p>
                         </div>
                     </div>
@@ -200,13 +200,13 @@
                 <ul class="nav nav-pills pull-right">
                     <li class="mix-filter" data-filter="all"><a>All</a>
                     </li>
-                    <li class="mix-filter" data-filter="mix-cat-Web"><a>Web</a>
+                    <li class="mix-filter" data-filter="mix-cat-Web"><a>Web Design</a>
                     </li>
-                    <li class="mix-filter" data-filter="mix-cat-Design"><a>Design</a>
+                    <li class="mix-filter" data-filter="mix-cat-Prog"><a>Programming</a>
                     </li>
-                    <li class="mix-filter" data-filter="mix-cat-Photography"><a>Photography</a>
+                    <li class="mix-filter" data-filter="mix-cat-Mobile"><a>Mobile Development</a>
                     </li>
-                    <li class="mix-filter" data-filter="mix-cat-Typography"><a>Typography</a>
+                    <li class="mix-filter" data-filter="mix-cat-UX"><a>User Experience</a>
                     </li>
                 </ul>
             </div>
@@ -237,7 +237,7 @@
             <div class="gap"></div>
             <div class="row">
                 <div class="span6">
-                    <h2>Clients</h2>
+                    <h2>Testimonies from our students</h2>
                 </div>
                 <div class="span6">
                     <ul class="wilto-controls pull-right top">
@@ -254,127 +254,56 @@
             <div class="wilto-slider-wrap" id="wilto-slider-wrap">
                 <div id="wilto-slider" class="wilto-slider">
                     <div class="wilto-slide row-fluid row-wrap">
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Nunc varius potenti bibendum feugiat platea scelerisque sed sit ut diam semper lorem cum urna</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/bubbles_70x70.jpg" alt="Image Alternative text" title="Bubbles" />
-                                    <p class="name">John Mathis</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Vestibulum bibendum quam scelerisque cursus tristique ultricies felis class ipsum sit sem congue augue montes</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/cecilia_70x70.jpg" alt="Image Alternative text" title="Cecilia" />
-                                    <p class="name">Carl Butler</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Ligula integer hendrerit imperdiet metus diam ac nascetur eros senectus sem justo aenean sed tellus</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/plunklock_live_in_cologne_70x70.jpg" alt="Image Alternative text" title="Plunklock live in Cologne" />
-                                    <p class="name">Bernadette Cornish</p>
-                                </div>
-                            </div>
-                        </div>
+                    	{% for student in students %}
+                    	   <div class="span4">
+	                            <div class="testimonial testimonial-color">
+	                                <div class="inner">
+	                                    <blockquote>
+	                                        <p>{{student.testimony}}</p>
+	                                    </blockquote>
+	                                </div>
+	                                <div class="author">
+	                                    <img src="{{student.image.url}}" alt="Image Alternative text" title="Bubbles" />
+	                                    <p class="name">{{student.name}}</p>
+	                                </div>
+	                            </div>
+	                        </div>
+                    	{% endfor %}
+                        
                     </div>
                     <div class="wilto-slide row-fluid row-wrap">
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Sodales parturient fermentum netus curabitur enim sed faucibus augue turpis tempus in venenatis class pellentesque</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/me_with_the_uke_70x70.jpg" alt="Image Alternative text" title="Me with the Uke" />
-                                    <p class="name">Neil Davidson</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Tempor netus hendrerit curae sem tempus arcu facilisis facilisi lacinia sagittis maecenas pharetra phasellus parturient</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/dave_70x70.jpg" alt="Image Alternative text" title="Dave" />
-                                    <p class="name">Joseph Watson</p>
+                        {% for student in students %}
+                           <div class="span4">
+                                <div class="testimonial testimonial-color">
+                                    <div class="inner">
+                                        <blockquote>
+                                            <p>{{student.testimony}}</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="author">
+                                        <img src="{{student.image.url}}" alt="Image Alternative text" title="Bubbles" />
+                                        <p class="name">{{student.name}}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Faucibus vehicula elementum sodales elementum semper metus etiam pellentesque consequat eu leo turpis feugiat nostra</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/amaze_70x70.jpg" alt="Image Alternative text" title="AMaze" />
-                                    <p class="name">Richard Jones</p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                     <div class="wilto-slide row-fluid row-wrap">
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Torquent maecenas porttitor inceptos dignissim sed vel a ultrices purus consectetur adipiscing ipsum risus eu</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/me_70x70.jpg" alt="Image Alternative text" title="me" />
-                                    <p class="name">Minnie Aviles</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Iaculis velit malesuada nascetur justo nisi class dui sit ante aliquam venenatis vehicula rutrum ipsum</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/chiara_70x70.jpg" alt="Image Alternative text" title="Chiara" />
-                                    <p class="name">Sarah Slater</p>
+                        {% for student in students %}
+                           <div class="span4">
+                                <div class="testimonial testimonial-color">
+                                    <div class="inner">
+                                        <blockquote>
+                                            <p>{{student.testimony}}</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="author">
+                                        <img src="{{student.image.url}}" alt="Image Alternative text" title="Bubbles" />
+                                        <p class="name">{{student.name}}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="span4">
-                            <div class="testimonial testimonial-color">
-                                <div class="inner">
-                                    <blockquote>
-                                        <p>Malesuada condimentum imperdiet condimentum per vehicula platea per cras rutrum rutrum aenean enim class quis</p>
-                                    </blockquote>
-                                </div>
-                                <div class="author">
-                                    <img src="/static/clear/img/afro_70x70.jpg" alt="Image Alternative text" title="Afro" />
-                                    <p class="name">Cyndy Naquin</p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -383,19 +312,6 @@
         </div>
     </div>
 
-
-
-
-
-    <!-- //////////////////////////////////
-//////////////END PAGE CONTENT///////// 
-////////////////////////////////////-->
-
-
-
-    <!-- //////////////////////////////////
-//////////////MAIN FOOTER////////////// 
-////////////////////////////////////-->
     <footer class="main">
         <div class="box box-color">
             <div class="container">
@@ -410,28 +326,17 @@
             <div class="row">
                 <div class="span2">
                     <a class="logo" href="/" style="font-size: 2.3em">
-		                Iqube's Skill Development Platform [sdp]
+		                Iqube
 		            </a>
                 </div>
                 <div class="span10">
-                    <!-- FOOTER NAVIGATION -->
                     <ul class="nav-footer">
-                        <li><a href="#">Home</a>
-                        </li>
-                        <li><a href="#">Portfolio</a>
-                        </li>
-                        <li><a href="#">Features</a>
-                        </li>
-                        <li><a href="#">Pages</a>
-                        </li>
-                        <li><a href="#">Blog</a>
-                        </li>
-                        <li><a href="#">Contact</a>
-                        </li>
+                        <li class="active"><a href="index-2.html">Home</a></li>
+                        <li><a href="/courses/">Courses</a></li>
+                        <li><a href="contact.html">How we Mentor</a></li>
+                        <li><a href="contact.html">Talk to Us</a></li>
                     </ul>
-                    <!-- END FOOTER NAGIVATION -->
-
-                    <!-- SOCIAL NAVIGATION -->
+                    
                     <ul class="nav-social">
                         <li>
                             <a class="icon-facebook" href="#" data-toggle="tooltip" title="Facebook"></a>
@@ -462,9 +367,6 @@
             <div class="gap gap-small"></div>
         </div>
     </footer>
-    <!-- //////////////////////////////////
-//////////////END MAIN  FOOTER///////// 
-////////////////////////////////////-->
 
 
     <!-- Scripts queries -->

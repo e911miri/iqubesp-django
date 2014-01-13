@@ -25,3 +25,16 @@ class Course(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(unicode(self.name))
         super(Course, self).save(*args, **kwargs)
+        
+
+class StudentTestimony(models.Model):
+    name = models.CharField(max_length= 100)
+    image = models.ImageField(upload_to="testimonies")
+    testimony = models.TextField()
+    page = models.IntegerField()
+    
+    def __unicode__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name_plural = "Stundent Testimonies"

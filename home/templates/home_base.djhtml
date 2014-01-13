@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>SDP - Home</title>
+    <!-- meta info -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="IQube Skill Development Platform" />
+    <meta name="description" content="SDP - Taking Knowledge to the next level">
+    <meta name="author" content="Tsoy - modified by Tomiwa Ijaware">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="/static/clear/css/boostrap.css">
+    <link rel="stylesheet" href="/static/clear/css/boostrap_responsive.css">
+    <!-- Font Awesome styles (icons) -->
+    <link rel="stylesheet" href="/static/clear/css/font_awesome.css">
+    <!-- Main Template styles -->
+    <link rel="stylesheet" href="/static/clear/css/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/static/clear/css/ie.css" />
+<![endif]-->
+    <!-- Your custom styles (blank file) -->
+    <link rel="stylesheet" href="/static/clear/css/mystyles.css">
+
+    <!-- <link rel="stylesheet" href="/static/clear/css/switcher.css"> -->
+
+    <!-- Modernizr script -->
+    <script src="/static/clear/js/modernizr.custom.26633.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Demo Examples -->
+    <link rel="alternate stylesheet" type="text/css" href="/static/clear/css/styles-red.css" title="red" media="all" />
+    
+    <header class='main'>
+        <div class="container">
+
+            <a class="logo" href="/" style="font-size: 2.3em">
+                Iqube's Skill Development Platform [sdp]
+            </a>
+            <div class="row">
+                <div class="span8">
+                    <!-- MAIN NAVIGATION -->
+                    <div class="flexnav-menu-button" id="flexnav-menu-button">Menu</div>
+                    <nav>
+                        <ul class="nav nav-pills flexnav" id="flexnav" data-breakpoint="800">
+                            <li class="active"><a href="index-2.html">Home</a></li>
+                            <li><a href="/courses/">Courses</a></li>
+                            <li><a href="contact.html">How we Mentor</a></li>
+                            <li><a href="contact.html">Talk to Us</a></li>
+                        </ul>
+                    </nav>
+                    <!-- END MAIN NAVIGATION -->
+                </div>
+                <div class="span4">
+                    <!-- SOCIAL NAVIGATION -->
+                    <ul class="nav-social">
+                        <li>
+                            <a class="icon-facebook" href="#" data-toggle="tooltip" title="Facebook"></a>
+                        </li>
+                        <li>
+                            <a class="icon-twitter" href="#" data-toggle="tooltip" title="Twitter"></a>
+                        </li>
+                        <li>
+                            <a class="icon-dribbble" href="#" data-toggle="tooltip" title="Dribble"></a>
+                        </li>
+                        <li>
+                            <a class="icon-google-plus" href="#" data-toggle="tooltip" title="Google +"></a>
+                        </li>
+                        <li>
+                            <a class="icon-linkedin" href="#" data-toggle="tooltip" title="Linked In"></a>
+                        </li>
+                        <li>
+                            <a class="icon-pinterest" href="#" data-toggle="tooltip" title="Pinterest"></a>
+                        </li>
+                        <li>
+                            <a class="icon-flickr" href="#" data-toggle="tooltip" title="Flickr"></a>
+                        </li>
+                    </ul>
+                    <!-- END SOCIAL NAVIGATION -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+    
+    {% endblock %}
+    <footer class="main">
+        <div class="box box-color">
+            <div class="container">
+                <!-- TWITTER -->
+                <div class="twitter-ticker" id="twitter-ticker"></div>
+                <!-- END TWITTER -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="gap gap-small"></div>
+            <div class="row">
+                <div class="span2">
+                    <a class="logo" href="/" style="font-size: 2.3em">
+                        Iqube
+                    </a>
+                </div>
+                <div class="span10">
+                    <!-- FOOTER NAVIGATION -->
+                    <ul class="nav-footer">
+                        <li class="active"><a href="index-2.html">Home</a></li>
+                        <li><a href="/courses/">Courses</a></li>
+                        <li><a href="contact.html">How we Mentor</a></li>
+                        <li><a href="contact.html">Talk to Us</a></li>
+                    </ul>
+                    <!-- END FOOTER NAGIVATION -->
+
+                    <!-- SOCIAL NAVIGATION -->
+                    <ul class="nav-social">
+                        <li>
+                            <a class="icon-facebook" href="#" data-toggle="tooltip" title="Facebook"></a>
+                        </li>
+                        <li>
+                            <a class="icon-twitter" href="#" data-toggle="tooltip" title="Twitter"></a>
+                        </li>
+                        <li>
+                            <a class="icon-dribbble" href="#" data-toggle="tooltip" title="Dribble"></a>
+                        </li>
+                        <li>
+                            <a class="icon-google-plus" href="#" data-toggle="tooltip" title="Google +"></a>
+                        </li>
+                        <li>
+                            <a class="icon-linkedin" href="#" data-toggle="tooltip" title="Linked In"></a>
+                        </li>
+                        <li>
+                            <a class="icon-pinterest" href="#" data-toggle="tooltip" title="Pinterest"></a>
+                        </li>
+                        <li>
+                            <a class="icon-flickr" href="#" data-toggle="tooltip" title="Flickr"></a>
+                        </li>
+                    </ul>
+                    <!-- END SOCIAL NAVIGATION -->
+                    <small>© Copyright 2013 by <a href="#">Clear</a>. All Rights Reserved.</small>
+                </div>
+            </div>
+            <div class="gap gap-small"></div>
+        </div>
+    </footer>
+    <!-- //////////////////////////////////
+//////////////END MAIN  FOOTER///////// 
+////////////////////////////////////-->
+
+
+    <!-- Scripts queries -->
+    <script src="/static/clear/js/jquery.js"></script>
+    <script src="/static/clear/js/boostrap.min.js"></script>
+    <script src="/static/clear/js/flexnav.min.js"></script>
+    <script src="/static/clear/js/gridrotator.min.js"></script>
+    <script src="/static/clear/js/magnific.min.js"></script>
+    <script src="/static/clear/js/mixitup.min.js"></script>
+    <script src="/static/clear/js/wilto_slider.min.js"></script>
+    <script src="/static/clear/js/tweet.min.js"></script>
+    <script src="/static/clear/js/mail.min.js"></script>
+    <script src="/static/clear/js/gmap3.min.js"></script>
+    <script src="/static/clear/js/nivo_slider.min.js"></script>
+    <script src="/static/clear/js/elastic.min.js"></script>
+    <script src="/static/clear/js/easing.min.js"></script>
+    <script src="/static/clear/js/mediaelement.min.js"></script>
+    <script src="/static/clear/js/fitvids.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="/static/clear/js/custom.js"></script>
+
+</body>
+
+</html>
