@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from sdp.constants import course_categories
 
 # Create your models here.
 
@@ -11,6 +12,9 @@ class Course(models.Model):
     active = models.BooleanField()
     created_on = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(unique=True)
+    
+    category = models.CharField(max_length=10, choices=course_categories)
+    image = models.ImageField(upload_to="courses")
     
     class Meta:
         verbose_name_plural = "Courses"

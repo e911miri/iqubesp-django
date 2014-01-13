@@ -104,7 +104,12 @@ STATICFILES_DIRS = (
 )
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
+# URL that handles the media served from MEDIA_ROOT. Make sure to use a
+# trailing slash.
+# Examples: "http://example.com/media/", "http://media.example.com/"
+MEDIA_URL = '/uploads/'
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.contrib.auth.context_processors.auth",
