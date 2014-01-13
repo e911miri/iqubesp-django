@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>SDP - Home</title>
+    <!-- meta info -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="IQube Skill Development Platform" />
+    <meta name="description" content="SDP - Taking Knowledge to the next level">
+    <meta name="author" content="Tsoy - modified by Tomiwa Ijaware">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="/static/clear/css/boostrap.css">
+    <link rel="stylesheet" href="/static/clear/css/boostrap_responsive.css">
+    <!-- Font Awesome styles (icons) -->
+    <link rel="stylesheet" href="/static/clear/css/font_awesome.css">
+    <!-- Main Template styles -->
+    <link rel="stylesheet" href="/static/clear/css/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/static/clear/css/ie.css" />
+<![endif]-->
+    <!-- Your custom styles (blank file) -->
+    <link rel="stylesheet" href="/static/clear/css/mystyles.css">
+
+    <!-- <link rel="stylesheet" href="/static/clear/css/switcher.css"> -->
+
+    <!-- Modernizr script -->
+    <script src="/static/clear/js/modernizr.custom.26633.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Demo Examples -->
+    <link rel="alternate stylesheet" type="text/css" href="/static/clear/css/styles-red.css" title="red" media="all" />
+    <!-- <link rel="alternate stylesheet" type="text/css" href="/static/clear/css/styles-yellow.css" title="yellow" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="/static/clear/css/styles-purple.css" title="purple" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="/static/clear/css/styles-green.css" title="green" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="/static/clear/css/styles-maroon.css" title="maroon" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="/static/clear/css/styles-blue.css" title="blue" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="/static/clear/css/styles-pink.css" title="pink" media="all" /> -->
+    <!-- END Demo Examples -->
+
+
+    <!-- <div class="demo_changer">
+        <div class="demo-icon"></div>
+        <div class="form_holder">
+            <div class="line"></div>
+            <p>CHOOSE YOUR STYLE</p>
+            <div class="predefined_styles">
+                <a href="index-nivo-slider-containerc392.html?default=true" class="styleswitch" style="background:#1693A5"></a>
+                <a href="#" rel="red" class="styleswitch" style="background:#d32232"></a>
+                <a href="#" rel="yellow" class="styleswitch" style="background:#FF9900"></a>
+                <a href="#" rel="purple" class="styleswitch" style="background:#d31996"></a>
+                <a href="#" rel="green" class="styleswitch" style="background:#52aa81"></a>
+                <a href="#" rel="maroon" class="styleswitch" style="background:#AD234B"></a>
+                <a href="#" rel="blue" class="styleswitch" style="background:#107FC9"></a>
+                <a href="#" rel="pink" class="styleswitch" style="background:#FE4365"></a>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div> -->
+
+
+    <!-- //////////////////////////////////
+//////////////MAIN HEADER///////////// 
+////////////////////////////////////-->
+
+    <header class='main'>
+        <div class="container">
+
+            <a class="logo" href="/" style="font-size: 2.3em">
+            	Iqube's Skill Development Platform [sdp]
+            </a>
+            <div class="row">
+                <div class="span8">
+                    <!-- MAIN NAVIGATION -->
+                    <div class="flexnav-menu-button" id="flexnav-menu-button">Menu</div>
+                    <nav>
+                        <ul class="nav nav-pills flexnav" id="flexnav" data-breakpoint="800">
+                            <li class="active"><a href="index-2.html">Home</a></li>
+                            <li><a href="/courses/">Courses</a></li>
+                            <li><a href="contact.html">How we Mentor</a></li>
+                            <li><a href="contact.html">Talk to Us</a></li>
+                        </ul>
+                    </nav>
+                    <!-- END MAIN NAVIGATION -->
+                </div>
+                <div class="span4">
+                    <!-- SOCIAL NAVIGATION -->
+                    <ul class="nav-social">
+                        <li>
+                            <a class="icon-facebook" href="#" data-toggle="tooltip" title="Facebook"></a>
+                        </li>
+                        <li>
+                            <a class="icon-twitter" href="#" data-toggle="tooltip" title="Twitter"></a>
+                        </li>
+                        <li>
+                            <a class="icon-dribbble" href="#" data-toggle="tooltip" title="Dribble"></a>
+                        </li>
+                        <li>
+                            <a class="icon-google-plus" href="#" data-toggle="tooltip" title="Google +"></a>
+                        </li>
+                        <li>
+                            <a class="icon-linkedin" href="#" data-toggle="tooltip" title="Linked In"></a>
+                        </li>
+                        <li>
+                            <a class="icon-pinterest" href="#" data-toggle="tooltip" title="Pinterest"></a>
+                        </li>
+                        <li>
+                            <a class="icon-flickr" href="#" data-toggle="tooltip" title="Flickr"></a>
+                        </li>
+                    </ul>
+                    <!-- END SOCIAL NAVIGATION -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- //////////////////////////////////
+//////////////END MAIN HEADER////////// 
+////////////////////////////////////-->
+
+
+    <!-- TOP AREA -->
+    <div class="top-area">
+        <div class="container">
+            <!-- START NIVO SLIDER -->
+            <div class="slider-wrapper theme-default">
+                <div id="nivo-slider" class="nivoSlider">
+                    <img src="/static/clear/img/amaze_1200x480.jpg" alt="Image Alternative text" title="#nivo-caption-1" data-thumb="240" />
+                    <img src="/static/clear/img/minimalism_outside_1200x480.jpg" alt="Image Alternative text" title="#nivo-caption-2" data-thumb="237" />
+                    <img src="/static/clear/img/gamer_chick_1200x480.jpg" alt="Image Alternative text" title="#nivo-caption-3" data-thumb="304" />
+                </div>
+                <div id="nivo-caption-1" class="nivo-html-caption">Litora dignissim suspendisse bibendum pretium platea ultricies eros et odio felis vulputate at nulla quam nullam natoque proin libero vulputate rhoncus natoque convallis libero consequat eget ad sociis netus facilisi senectus magna parturient tellus quisque erat etiam montes nam maecenas ut ipsum laoreet ad netus at congue dignissim posuere nisl</div>
+                <div id="nivo-caption-2" class="nivo-html-caption">Sapien suspendisse eros nostra donec hac praesent dignissim nec mollis ante urna nostra pulvinar pretium urna montes sed posuere ridiculus augue bibendum lorem nascetur laoreet interdum viverra torquent gravida convallis potenti sollicitudin accumsan commodo nullam aenean cursus ornare dis mi ad nulla imperdiet varius euismod himenaeos per hac dis primis</div>
+                <div id="nivo-caption-3" class="nivo-html-caption">Accumsan id lobortis aptent tincidunt class faucibus diam erat blandit libero leo nibh lobortis condimentum posuere taciti senectus volutpat fames montes elit feugiat augue nibh feugiat sociis himenaeos magna dapibus primis aliquam dignissim hac primis inceptos diam volutpat arcu fermentum integer penatibus laoreet cras habitant litora auctor porta viverra volutpat</div>
+            </div>
+            <!-- END NIVO SLIDER -->
+        </div>
+        <div class="gap gap-small"></div>
+    </div>
+    <!-- END TOP AREA -->
+
+
+
+
+
+
+    <div class="box box-color">
+        <div class="container">
+            <div class="gap"></div>
+            <!-- START SERVICES -->
+            <div class="row row-wrap">
+                <div class="span4">
+                    <div class="service-thumb">
+                        <a class="icon-heart service-icon" href="#"></a>
+                        <div class="inner">
+                            <h3 class="title">Tested with Nigerians</h3>
+                            <p class="desciption">Our program has been known to succeed in a third world country like Nigeria where Internet and Electricity supply are inadequate. Our methods have been able to combat these known limitations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="service-thumb">
+                        <a class="icon-bolt service-icon" href="#"></a>
+                        <div class="inner">
+                            <h3 class="title">Live Mentoring with Skype</h3>
+                            <p class="desciption">Our trainees have hangout with us on skype every week, this helps us know them personally, find out what problems they are going through and also encourage them to participate in confidence building excercises</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="service-thumb">
+                        <a class="icon-fullscreen service-icon" href="#"></a>
+                        <div class="inner">
+                            <h3 class="title">Fully Flexible Training</h3>
+                            <p class="desciption">You control your own learning pace, you are not monitored by some robot, but rather is encouraged to work at your comfortable ability, but be warned, you would be drilled</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SERVICES -->
+            <div class="gap gap-small"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="gap"></div>
+        <div class="row">
+            <div class="span6">
+                <h2>Our Courses</h2>
+            </div>
+            <div class="span6">
+                <ul class="nav nav-pills pull-right">
+                    <li class="mix-filter" data-filter="all"><a>All</a>
+                    </li>
+                    <li class="mix-filter" data-filter="mix-cat-Web"><a>Web</a>
+                    </li>
+                    <li class="mix-filter" data-filter="mix-cat-Design"><a>Design</a>
+                    </li>
+                    <li class="mix-filter" data-filter="mix-cat-Photography"><a>Photography</a>
+                    </li>
+                    <li class="mix-filter" data-filter="mix-cat-Typography"><a>Typography</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- START MIXIUP FILTER -->
+        <div id="mixitup-grid" class="mixitup-grid row">
+        {% for course in courses %}
+            <div class="mix mix-cat-{{course.category}} span3">
+                <div class="project-thumb">
+                    <a class="img-hover" href="/courses/{{course.id}}">
+                        <img src="{{course.image.url}}" alt="Image Alternative text" title="Happy Bokeh Day" /><i class="icon-link hover-icon"></i>
+                    </a>
+                    <h5 class="title"><a href="/courses/{{course.id}}">{{course.name}}</a></h5>
+                    <p class="desciption">{{course.desc|truncatewords:"20"}}</p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+        
+        <!-- END MIXIUP FILTER -->
+        <div class="gap gap-small"></div>
+    </div>
+
+
+    <div class="box box-gray">
+
+        <div class="container">
+            <div class="gap"></div>
+            <div class="row">
+                <div class="span6">
+                    <h2>Clients</h2>
+                </div>
+                <div class="span6">
+                    <ul class="wilto-controls pull-right top">
+                        <li>
+                            <a href="#wilto-slider" class="prev"></a>
+                        </li>
+                        <li>
+                            <a href="#wilto-slider" class="next"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- START CONTENT SLIDER -->
+            <div class="wilto-slider-wrap" id="wilto-slider-wrap">
+                <div id="wilto-slider" class="wilto-slider">
+                    <div class="wilto-slide row-fluid row-wrap">
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Nunc varius potenti bibendum feugiat platea scelerisque sed sit ut diam semper lorem cum urna</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/bubbles_70x70.jpg" alt="Image Alternative text" title="Bubbles" />
+                                    <p class="name">John Mathis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Vestibulum bibendum quam scelerisque cursus tristique ultricies felis class ipsum sit sem congue augue montes</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/cecilia_70x70.jpg" alt="Image Alternative text" title="Cecilia" />
+                                    <p class="name">Carl Butler</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Ligula integer hendrerit imperdiet metus diam ac nascetur eros senectus sem justo aenean sed tellus</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/plunklock_live_in_cologne_70x70.jpg" alt="Image Alternative text" title="Plunklock live in Cologne" />
+                                    <p class="name">Bernadette Cornish</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wilto-slide row-fluid row-wrap">
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Sodales parturient fermentum netus curabitur enim sed faucibus augue turpis tempus in venenatis class pellentesque</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/me_with_the_uke_70x70.jpg" alt="Image Alternative text" title="Me with the Uke" />
+                                    <p class="name">Neil Davidson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Tempor netus hendrerit curae sem tempus arcu facilisis facilisi lacinia sagittis maecenas pharetra phasellus parturient</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/dave_70x70.jpg" alt="Image Alternative text" title="Dave" />
+                                    <p class="name">Joseph Watson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Faucibus vehicula elementum sodales elementum semper metus etiam pellentesque consequat eu leo turpis feugiat nostra</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/amaze_70x70.jpg" alt="Image Alternative text" title="AMaze" />
+                                    <p class="name">Richard Jones</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wilto-slide row-fluid row-wrap">
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Torquent maecenas porttitor inceptos dignissim sed vel a ultrices purus consectetur adipiscing ipsum risus eu</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/me_70x70.jpg" alt="Image Alternative text" title="me" />
+                                    <p class="name">Minnie Aviles</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Iaculis velit malesuada nascetur justo nisi class dui sit ante aliquam venenatis vehicula rutrum ipsum</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/chiara_70x70.jpg" alt="Image Alternative text" title="Chiara" />
+                                    <p class="name">Sarah Slater</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial testimonial-color">
+                                <div class="inner">
+                                    <blockquote>
+                                        <p>Malesuada condimentum imperdiet condimentum per vehicula platea per cras rutrum rutrum aenean enim class quis</p>
+                                    </blockquote>
+                                </div>
+                                <div class="author">
+                                    <img src="/static/clear/img/afro_70x70.jpg" alt="Image Alternative text" title="Afro" />
+                                    <p class="name">Cyndy Naquin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTENT SLIDER -->
+            <div class="gap gap-small"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- //////////////////////////////////
+//////////////END PAGE CONTENT///////// 
+////////////////////////////////////-->
+
+
+
+    <!-- //////////////////////////////////
+//////////////MAIN FOOTER////////////// 
+////////////////////////////////////-->
+    <footer class="main">
+        <div class="box box-color">
+            <div class="container">
+                <!-- TWITTER -->
+                <div class="twitter-ticker" id="twitter-ticker"></div>
+                <!-- END TWITTER -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="gap gap-small"></div>
+            <div class="row">
+                <div class="span2">
+                    <a class="logo" href="/" style="font-size: 2.3em">
+		                Iqube's Skill Development Platform [sdp]
+		            </a>
+                </div>
+                <div class="span10">
+                    <!-- FOOTER NAVIGATION -->
+                    <ul class="nav-footer">
+                        <li><a href="#">Home</a>
+                        </li>
+                        <li><a href="#">Portfolio</a>
+                        </li>
+                        <li><a href="#">Features</a>
+                        </li>
+                        <li><a href="#">Pages</a>
+                        </li>
+                        <li><a href="#">Blog</a>
+                        </li>
+                        <li><a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- END FOOTER NAGIVATION -->
+
+                    <!-- SOCIAL NAVIGATION -->
+                    <ul class="nav-social">
+                        <li>
+                            <a class="icon-facebook" href="#" data-toggle="tooltip" title="Facebook"></a>
+                        </li>
+                        <li>
+                            <a class="icon-twitter" href="#" data-toggle="tooltip" title="Twitter"></a>
+                        </li>
+                        <li>
+                            <a class="icon-dribbble" href="#" data-toggle="tooltip" title="Dribble"></a>
+                        </li>
+                        <li>
+                            <a class="icon-google-plus" href="#" data-toggle="tooltip" title="Google +"></a>
+                        </li>
+                        <li>
+                            <a class="icon-linkedin" href="#" data-toggle="tooltip" title="Linked In"></a>
+                        </li>
+                        <li>
+                            <a class="icon-pinterest" href="#" data-toggle="tooltip" title="Pinterest"></a>
+                        </li>
+                        <li>
+                            <a class="icon-flickr" href="#" data-toggle="tooltip" title="Flickr"></a>
+                        </li>
+                    </ul>
+                    <!-- END SOCIAL NAVIGATION -->
+                    <small>© Copyright 2013 by <a href="#">Clear</a>. All Rights Reserved.</small>
+                </div>
+            </div>
+            <div class="gap gap-small"></div>
+        </div>
+    </footer>
+    <!-- //////////////////////////////////
+//////////////END MAIN  FOOTER///////// 
+////////////////////////////////////-->
+
+
+    <!-- Scripts queries -->
+    <script src="/static/clear/js/jquery.js"></script>
+    <script src="/static/clear/js/boostrap.min.js"></script>
+    <script src="/static/clear/js/flexnav.min.js"></script>
+    <script src="/static/clear/js/gridrotator.min.js"></script>
+    <script src="/static/clear/js/magnific.min.js"></script>
+    <script src="/static/clear/js/mixitup.min.js"></script>
+    <script src="/static/clear/js/wilto_slider.min.js"></script>
+    <script src="/static/clear/js/tweet.min.js"></script>
+    <script src="/static/clear/js/mail.min.js"></script>
+    <script src="/static/clear/js/gmap3.min.js"></script>
+    <script src="/static/clear/js/nivo_slider.min.js"></script>
+    <script src="/static/clear/js/elastic.min.js"></script>
+    <script src="/static/clear/js/easing.min.js"></script>
+    <script src="/static/clear/js/mediaelement.min.js"></script>
+    <script src="/static/clear/js/fitvids.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="/static/clear/js/custom.js"></script>
+
+    <script src="/static/clear/js/switcher.js"></script>
+
+</body>
+
+</html>
