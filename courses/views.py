@@ -6,7 +6,7 @@ from django.views import generic
 
 # Create your views here.
 class index(generic.ListView):
-    template_name = 'courses/index.html'
+    template_name = 'courses/index.djhtml'
     context_object_name = 'courses'
 
     def get_queryset(self):

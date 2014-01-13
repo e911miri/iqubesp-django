@@ -119,7 +119,7 @@ GRAPPELLI_ADMIN_TITLE = "IQube's Skill Development Platform"
 
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), "templates")
-DATABASES['default'] =  dj_database_url.config()
+# DATABASES['default'] =  dj_database_url.config()
 if not DEBUG:
     DATABASES['default'] =  dj_database_url.config()
     EMAIL_HOST_USER = os.environ['SENDGRID_USERNAME']

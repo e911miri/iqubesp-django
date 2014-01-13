@@ -1,16 +1,23 @@
-{% extends 'base.djhtml' %}
+{% extends 'home_base.djhtml' %}
 {%block content%}
 	<div class="container">
-		<h1 class="page-header" style="font-size: 3em;">Current Skills offered by SDP</h1>
+		<h2>Current Skills offered by SDP</h2>
 	   {% if courses %}
+	   <div class="row">
 	       {% for course in courses %}
-	           <div class="col-md-4 col-sm-12 thumbnail">
-	           	   <h3 style="font-size: 2.3em; color: grey ">{{course.name}}</h3>
-	           	   <p>{{course.desc|truncatewords:"25"}}</p>
-	           	   <a href="/courses/{{course.id}}" class="btn btn-info col-md-6 col-sm-6">See More</a>
-	           	   <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
-	           </div>
+	           <div class="mix mix-cat-{{course.category}} span3">
+	                <div class="project-thumb">
+	                    <a class="img-hover" href="/courses/{{course.id}}">
+	                        <img src="{{course.image.url}}" alt="Image Alternative text" title="Happy Bokeh Day" /><i class="icon-link hover-icon"></i>
+	                    </a>
+	                    <h5 class="title"><a href="/courses/{{course.id}}">{{course.name}}</a></h5>
+	                    <p class="desciption">{{course.desc|truncatewords:"20"}}</p>
+	                    <a href="/courses/{{course.id}}" class="btn btn-info col-md-6 col-sm-6">See More</a>
+                        <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
+	                </div>
+	            </div>
 	       {% endfor %}
+	   </div>
 	   {% else %}
 	       There are currently no courses in our database
 	   {% endif %}
