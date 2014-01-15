@@ -84,6 +84,7 @@
                         <ul class="nav nav-pills flexnav" id="flexnav" data-breakpoint="800">
                             <li class="active"><a href="index-2.html">Home</a></li>
                             <li><a href="/courses/">Courses</a></li>
+                            <li><a href="/students/">Current Students</a></li>
                             <li><a href="contact.html">How we Mentor</a></li>
                             <li><a href="contact.html">Talk to Us</a></li>
                         </ul>
