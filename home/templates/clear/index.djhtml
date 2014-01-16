@@ -1,4 +1,5 @@
 {%extends 'home_base.djhtml'%}
+{% load staticfiles %}
 {% block content %}
     <!-- TOP AREA -->
     <div class="top-area">
@@ -6,22 +7,22 @@
             <!-- START NIVO SLIDER -->
             <div class="ei-slider" id="ei-slider">
                 <ul class="ei-slider-large">
-                    <li>
-                        <img src="static/clear/img/amaze_1200x480.jpg" alt="Image Alternative text" title="AMaze" />
+                    <!-- <li>
+                        <img src="{% static "clear/img/amaze_1200x480.jpg" %}" alt="Image Alternative text" title="AMaze" />
                         <div class="ei-title">
                             <h2>+Trending</h2>
                             <h3>Build Websites with HTML 5</h3>
                         </div>
                     </li>
                     <li>
-                        <img src="static/clear/img/minimalism_outside_1200x480.jpg" alt="Image Alternative text" title="Minimalism outside" />
+                        <img src="{% static "clear/img/minimalism_outside_1200x480.jpg" %}" alt="Image Alternative text" title="Minimalism outside" />
                         <div class="ei-title">
                             <h2>+UX</h2>
                             <h3>Rotimi</h3>
                         </div>
-                    </li>
+                    </li> -->
                     <li>
-                        <img src="static/clear/img/gamer_chick_1200x480.jpg" alt="Image Alternative text" title="Gamer Chick" />
+                        <img src="{% static "clear/img/gamer_chick_1200x480.jpg" %}" alt="Image Alternative text" title="Gamer Chick" />
                         <div class="ei-title">
                     		<h2>Intersted?</h2>
                             <h3>Big Data Analysis</h3>
@@ -37,13 +38,13 @@
                 <ul class="ei-slider-thumbs">
                     <li class="ei-slider-element">Current</li>
                     <li><a>slide-1</a>
-                        <img src="static/clear/img/amaze_150x60.jpg" alt="Image Alternative text" title="AMaze" />
+                        <img src="{% static "clear/img/amaze_150x60.jpg" %}" alt="Image Alternative text" title="AMaze" />
                     </li>
                     <li><a>slide-2</a>
-                        <img src="static/clear/img/minimalism_outside_150x60.jpg" alt="Image Alternative text" title="Minimalism outside" />
+                        <img src="{% static "clear/img/minimalism_outside_150x60.jpg" %}" alt="Image Alternative text" title="Minimalism outside" />
                     </li>
                     <li><a>slide-3</a>
-                        <img src="static/clear/img/gamer_chick_150x60.jpg" alt="Image Alternative text" title="Gamer Chick" />
+                        <img src="{% static "clear/img/gamer_chick_150x60.jpg" %}" alt="Image Alternative text" title="Gamer Chick" />
                     </li>
                 </ul>
             </div>
