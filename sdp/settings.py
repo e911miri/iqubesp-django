@@ -21,10 +21,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'tb0j!(_c28@qj%y)iecy)f31q$ha)#2kezrh^1*k1&p3#y37^l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', ''))
+DEBUG = bool(os.environ.get('DJ_DEBUG', ''))
 TEMPLATE_DEBUG = DEBUG
 
-TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -172,4 +171,4 @@ if not DEBUG:
     
     S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
     STATIC_URL = S3_URL
-    ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+    ADMIN_MEDIA_PREFIX = S3_URL + 'admin/'
