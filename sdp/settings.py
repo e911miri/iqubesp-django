@@ -21,7 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'tb0j!(_c28@qj%y)iecy)f31q$ha)#2kezrh^1*k1&p3#y37^l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', ''))
+TEMPLATE_DEBUG = DEBUG
 
 TEMPLATE_DEBUG = True
 
@@ -33,6 +34,7 @@ INSTALLED_APPS = (
 #     'grappelli',
 #     'registration_defaults',
     'suit',
+    'storages',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -123,7 +125,6 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, "templates")
 )
 
-GRAPPELLI_ADMIN_TITLE = "IQube's Skill Development Platform"
 SUIT_CONFIG = {
     'ADMIN_NAME': 'SDP Admin',
     # 'HEADER_DATE_FORMAT': 'l, j. F Y',
@@ -154,7 +155,6 @@ SUIT_CONFIG = {
 
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), "templates")
-DATABASES['default'] =  dj_database_url.config()
 if not DEBUG:
     DATABASES['default'] =  dj_database_url.config()
     EMAIL_HOST_USER = os.environ['SENDGRID_USERNAME']
@@ -162,3 +162,14 @@ if not DEBUG:
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
     EMAIL_HOST_PASSWORD = os.environ['SENDGRID_PASSWORD']
+    
+    AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
+    AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+    AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+    from S3 import CallingFormat
+    AWS_CALLING_FORMAT = CallingFormat.SUBDOMAIN
+    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+    
+    S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+    STATIC_URL = S3_URL
+    ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
