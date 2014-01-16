@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="{% static "clear/css/ie.css" %}" />
 <![endif]-->
     <!-- Your custom styles (blank file) -->
-    <link rel="stylesheet" href="{% static "clear/css/mystyles.css" %}">
+    <!-- <link rel="stylesheet" href="{% static "clear/css/mystyles.css" %}"> -->
 
     <!-- <link rel="stylesheet" href="{% static "clear/css/switcher.css" %}"> -->
 
@@ -43,7 +43,7 @@
         <div class="container">
 
             <a class="logo" href="/" style="font-size: 2.3em">
-                Iqube's Skill Development Platform [sdp]
+                Skill Development Platform [sdp]
             </a>
             <div class="row">
                 <div class="span8">
@@ -165,14 +165,14 @@
     <script src="{% static "clear/js/magnific.min.js" %}"></script>
     <script src="{% static "clear/js/mixitup.min.js" %}"></script>
     <script src="{% static "clear/js/wilto_slider.min.js" %}"></script>
-    <script src="{% static "clear/js/tweet.min.js" %}"></script>
-    <script src="{% static "clear/js/mail.min.js" %}"></script>
-    <script src="{% static "clear/js/gmap3.min.js" %}"></script>
+    <!-- <script src="{% static "clear/js/tweet.min.js" %}"></script>
+    <script src="{% static "clear/js/mail.min.js" %}"></script> -->
+    <!-- <script src="{% static "clear/js/gmap3.min.js" %}"></script> -->
     <script src="{% static "clear/js/nivo_slider.min.js" %}"></script>
     <script src="{% static "clear/js/elastic.min.js" %}"></script>
     <script src="{% static "clear/js/easing.min.js" %}"></script>
     <script src="{% static "clear/js/mediaelement.min.js" %}"></script>
-    <script src="{% static "clear/js/fitvids.min.js" %}"></script>
+    <!-- <script src="{% static "clear/js/fitvids.min.js" %}"></script> -->
 
     <!-- Custom scripts -->
     <script src="{% static "clear/js/custom.js" %}"></script>
