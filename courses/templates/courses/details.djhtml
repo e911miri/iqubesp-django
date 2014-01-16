@@ -2,22 +2,24 @@
 {% block content %}
 {% if course %}
 <div class="container">
-	<div class="span8">
-		<h3 style="font-size: 2.3em; color: grey "><small>Course Title: </small>{{course.name}}</h3>
-		<h4 style="font-size: 1.8em; color: lightblue "><small>Duration: </small>6 weeks</h4>
-		{% if user %}
-          {% if user_has_joined_class %}
-              <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
-          {% else %}
-              <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
-          {% endif %}
-          
-        {% else %}
-            <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
-        {% endif %}
-        <p >{{course.desc}}</p>        
-    </div>
-	<div class="span3">		
+	<div class="row">
+		<div class="span8">
+			<h3 style="font-size: 2.3em; color: grey "><small>Course Title: </small>{{course.name}}</h3>
+			<h4 style="font-size: 1.8em; color: lightblue "><small>Duration: </small>6 weeks</h4>
+			{% if user %}
+	          {% if user_has_joined_class %}
+	              <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
+	          {% else %}
+	              <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
+	          {% endif %}
+	          
+	        {% else %}
+	            <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
+	        {% endif %}
+	        <p >{{course.desc}}</p>        
+	    </div>
+		<div class="span4">		
+		</div>
 	</div>
 </div>
 {% else %}

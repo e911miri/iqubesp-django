@@ -13,3 +13,4 @@ static==0.4
 wsgiref==0.1.2
 python-openid
 django-registration
+django-suit
