@@ -22,7 +22,7 @@
                         </div>
                     </li> -->
                     <li>
-                        <img src="{% static "clear/img/gamer_chick_1200x480.jpg" %}" alt="Image Alternative text" title="Gamer Chick" />
+                        <img src="{% static "clear/img/sdpBG.jpg" %}" alt="Image Alternative text" title="Gamer Chick" />
                         <div class="ei-title">
                     		<h2>Intersted?</h2>
                             <h3>Big Data Analysis</h3>
@@ -35,7 +35,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="ei-slider-thumbs">
+                <!-- <ul class="ei-slider-thumbs">
                     <li class="ei-slider-element">Current</li>
                     <li><a>slide-1</a>
                         <img src="{% static "clear/img/amaze_150x60.jpg" %}" alt="Image Alternative text" title="AMaze" />
@@ -46,7 +46,7 @@
                     <li><a>slide-3</a>
                         <img src="{% static "clear/img/gamer_chick_150x60.jpg" %}" alt="Image Alternative text" title="Gamer Chick" />
                     </li>
-                </ul>
+                </ul> -->
             </div>
             <!-- END NIVO SLIDER -->
         </div>
