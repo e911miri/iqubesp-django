@@ -14,3 +14,4 @@ wsgiref==0.1.2
 python-openid
 django-registration
 django-suit
+django-ckeditor
