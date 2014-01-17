@@ -7,6 +7,7 @@ from sdp.constants import course_categories
 class Course(models.Model):
     name = models.CharField(max_length= 100)
     desc = models.TextField()
+    duration = models.CharField(max_length= 15)
     link = models.CharField(max_length= 200)
     testimonial = models.CharField(max_length= 200)
     active = models.BooleanField()
