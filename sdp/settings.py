@@ -111,7 +111,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = '/uploads/'
+MEDIA_URL = ''
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.contrib.auth.context_processors.auth",
@@ -171,4 +171,5 @@ if not DEBUG:
     
     S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
     STATIC_URL = S3_URL
+    MEDIA_URL = S3_URL + 'uploads/'
     ADMIN_MEDIA_PREFIX = S3_URL + 'admin/'
