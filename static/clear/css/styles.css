@@ -4720,3 +4720,12 @@ img.mfp-img {
   }
 }
 /*END RESPONSIVE*/
+
+[class*="col-"] [class*="span"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.row{
+    overflow: hidden; 
+}

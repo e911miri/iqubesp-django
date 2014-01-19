@@ -20,7 +20,7 @@
 				</tbody>			
 			</table>
 		</div>
-		<div class="span4" style="border-left: 1px solid grey">
+		<div class="span4" style="border-left: 0px solid grey">
 			<h3 class="page-header">Popular Courses</h3>
 			{% for course in courses %}
 			  <div class="span4">
