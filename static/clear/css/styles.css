@@ -4721,11 +4721,17 @@ img.mfp-img {
 }
 /*END RESPONSIVE*/
 
-[class*="col-"] [class*="span"]{
+mix{
     margin-bottom: -99999px;
     padding-bottom: 99999px;
+    height: 367px;
+    max-height: 367px;
 }
 
 .row{
     overflow: hidden; 
+}
+.desciption{
+	min-height: 64px;
+	overflow: hidden;
 }
