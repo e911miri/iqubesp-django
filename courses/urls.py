@@ -7,5 +7,5 @@ urlpatterns = patterns('',
 #     url(r'^(?P<course_id>\d+)/register$', courses.views.register, name='course_register'),
     
     url(r'^(?P<id>\d+)/(?P<slug>[-\w]+)$',courses.views.details, name='course_detail'),
-    url(r'^(?P<id>\d+)/(?P<slug>[-\w]+)//register$', courses.views.register, name='course_register'),
+    url(r'^(?P<id>\d+)/(?P<slug>[-\w]+)/register$', courses.views.register, name='course_register'),
 )

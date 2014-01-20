@@ -2,12 +2,18 @@
 {% block content %}
 {% if course %}
 <div class="container">
-    <strong>To register for SDP:</strong><br>
-    1) Make payments (of #5000 pers skill chosen) into <br>
-    <strong>GTBank Account Name: Oyedele Oluwadetan
-        Account Number: 491/450555/1590 (Regular) or 0037165472 (NUBAN) </strong>
-        <br>
-            2) Send an email to <br><a href="mailto:detan.oyedele@gmail.com">detan.oyedele@gmail.com</a> indicating your interest in any course(s) you have paid for and your proposed start date
+	{%if course%}
+	<p class="alert alert-info">
+		Please read the Instructions carefully before registering
+	</p>
+	<h3>Registration Process</h3>
+	<ol class="process">
+		<li>Make payment into our account. Make payments (of <em>N5000 ($33)</em> pers skill chosen) into <br>
+    <strong>GTBank Account Name: Oyedele Oluwadetan<br>
+        Account Number: 491/450555/1590 (Regular) or 0037165472 (NUBAN) </strong></li>
+		<li>Send an email to <br><a href="mailto:detan.oyedele@gmail.com">detan.oyedele@gmail.com</a> indicating your interest in any course(s) you have paid for and your proposed start date</li>
+	</ol>
+	{%endif%}
 </div>
 {% else %}
 Error Between Keyboard and Chair!!!

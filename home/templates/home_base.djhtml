@@ -114,10 +114,10 @@
                 <div class="span10">
                     <!-- FOOTER NAVIGATION -->
                     <ul class="nav-footer">
-                        <li class="active"><a href="index-2.html">Home</a></li>
+                        <li class="active"><a href="/">Home</a></li>
                         <li><a href="/courses/">Courses</a></li>
-                        <li><a href="contact.html">How we Mentor</a></li>
-                        <li><a href="contact.html">Talk to Us</a></li>
+                        <li><a href="/mentoring">How we Mentor</a></li>
+                        <li><a href="mailto:detan.oyedele@gmail.com">Talk to Us</a></li>
                     </ul>
                     <!-- END FOOTER NAGIVATION -->
 

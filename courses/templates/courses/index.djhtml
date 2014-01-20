@@ -7,7 +7,7 @@
 	       {% for course in courses %}
 	           <div class="mix mix-cat-{{course.category}} span3">
 	                <div class="project-thumb">
-	                    <a class="img-hover" href="/courses/{{course.id}}">
+	                    <a class="img-hover" href="/courses/{{course.id}}/{{course.slug}}">
 	                        <img src="{{course.image.url}}" alt="Image Alternative text" title="Happy Bokeh Day" /><i class="icon-link hover-icon"></i>
 	                    </a>
 	                    <h5 class="title"><a href="/courses/{{course.id}}">{{course.name}}</a></h5>
