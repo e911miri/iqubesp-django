@@ -9,6 +9,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'home.views.index', name='home'),
+    url(r'^mentoring$', 'home.views.mentoring', name='mentoring'),
 #     url(r'^accounts/profile/$', 'home.views.index', name='profile'),
 #     url(r'^login/(\w*)', 'home.views.login', name='login'),
     

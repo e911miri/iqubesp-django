@@ -22,17 +22,12 @@ def details(request, course_id):
 
 @login_required
 def register(request, course_id):
-    course = Course.objects.get(pk=course_id)
-    sc = StudentCourse.objects.create(student=request.user, course=course, invite_reason = 'automated', paid=False)
-    sc.save()
-    
-    return redirect('/students')
-#     if request.POST:
-#         course = Course.objects.get(pk=course_id)
-#         StudentCourse.objects.create(student=request.user, course=course, invite_reason = 'automated', paid=False)
-#         return redirect('/students')
-#     context = {
-#        'courses': Course.objects.get(pk=course_id)
-#     }
-#     template_path = "courses/register.djhtml"
-#     return render(request, template_path, context)
+    if request.POST:
+        course = Course.objects.get(pk=course_id)
+        StudentCourse.objects.create(student=request.user, course=course, invite_reason = 'automated', paid=False)
+        return redirect('/students')
+    context = {
+       'course': Course.objects.get(pk=course_id)
+    }
+    template_path = "courses/register.djhtml"
+    return render(request, template_path, context)

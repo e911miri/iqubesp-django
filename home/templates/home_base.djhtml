@@ -54,8 +54,8 @@
                             <li class="active"><a href="/">Home</a></li>
                             <li><a href="/courses/">Courses</a></li>
                             <li><a href="/students/">Current Students</a></li>
-                            <li><a href="#">How we Mentor</a></li>
-                            <li><a href="#">Talk to Us</a></li>
+                            <li><a href="/mentoring">How we Mentor</a></li>
+                            <li><a href="mailto:detan.oyedele@gmail.com">Talk to Us</a></li>
                         </ul>
                     </nav>
                     <!-- END MAIN NAVIGATION -->

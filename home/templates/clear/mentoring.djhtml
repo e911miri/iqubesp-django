@@ -1,0 +1,31 @@
+{% extends 'home_base.djhtml' %}
+{% block content %}
+    <div class="container">
+    	<h1>A Comprehensive guide to how we mentor</h1>
+	    <h3>What is SDP?</h3>
+	    <p>
+	        Skill Development Platform that employs a coaching based Training / Learning style to help and guide you in learning a world class relevant technology skill in just 3 months.
+	        SDP is a community of knowledge-driven professionals in the IT industry who are willing and able to learn skills relevant to our society and their personal career goals and aspirations, thereby helping to solve challenges and problems using these skills and tools learnt.
+	    </p>
+	    <h3>What Do we offer at SDP</h3>
+	    <ul id="features">
+	        <li>Convenient Virtual classes! Anytime! Anywhere!</li>
+	        <li>Skill learned provide you with ample opportunity to stand-out among your equals</li>
+	        <li>SDP may provide you with the chance of working on real company projects after the 3-months duration of learning for each skill</li>
+	        <li>Cheap and Affordable</li>
+	        <li>Social Learning</li>
+	        <li>Build you Skill portfolio and get references</li>
+	    </ul>
+	    <h3>What do I need to jon the program</h3>
+	    <ul>
+	        <li>A PC with internet connection</li>
+	        <li>A teachable individual</li>                
+	    </ul>
+	    <h3>How much does it cost?</h3>
+	    <p>5,000 Naira</p>
+	    <h3>How long does it run?</h3>
+	    <p>SDP runs for a period of <strong>3 months per skill chosen </strong> at a rate of <strong>#5000 per skill </strong> and you are allowed to enrol for as many courses as you wishper time.</p>
+	    <p>SDP monitors students result by records and report filling which summarises students review, knowledge, development and project tasks over a period of time so students can know how well they perform on a regular basis.</p>
+    </div>
+	
+{% endblock %}
