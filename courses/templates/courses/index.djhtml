@@ -12,8 +12,8 @@
 	                    </a>
 	                    <h5 class="title"><a href="/courses/{{course.id}}">{{course.name}}</a></h5>
 	                    <p class="desciption">{{course.desc|truncatewords:"20"}}</p>
-	                    <a href="/courses/{{course.id}}" class="btn btn-info col-md-6 col-sm-6">See More</a>
-                        <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
+	                    <a href="/courses/{{course.id}}/{{course.slug}}" class="btn btn-info col-md-6 col-sm-6">See More</a>
+                        <a href="/courses/{{course.id}}/{{course.slug}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
 	                </div>
 	            </div>
 	       {% endfor %}

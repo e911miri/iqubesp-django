@@ -6,16 +6,7 @@
 		<div class="span8">
 			<h3 style="font-size: 2.3em; color: grey "><small>Course Title: </small>{{course.name}}</h3>
 			<h4 style="font-size: 1.8em; color: lightblue "><small>Duration: </small>{{course.duration}}</h4>
-			{% if user %}
-	          {% if user_has_joined_class %}
-	              <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
-	          {% else %}
-	              <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
-	          {% endif %}
-	          
-	        {% else %}
-	            <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
-	        {% endif %}
+			
 	        <p >{{course.desc}}</p>        
 	    </div>
 		<div class="span4">		
@@ -26,3 +17,14 @@
 Error Between Keyboard and Chair!!!
 {% endif %}
 {% endblock %}
+
+<!-- {% if user %}
+  {% if user_has_joined_class %}
+  <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
+  {% else %}
+  <a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">Goto Class</a>
+  {% endif %}
+  
+{% else %}
+<a href="/courses/{{course.id}}/register" class="btn btn-default btn-success col-md-6 col-sm-6">register</a>
+{% endif %} -->

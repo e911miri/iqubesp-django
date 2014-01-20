@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from operations.models import Course
 from django.contrib.auth.decorators import login_required
 from students.models import StudentCourse
@@ -13,21 +13,21 @@ class index(generic.ListView):
         """Return the last five published polls."""
         return Course.objects.all()
 
-def details(request, course_id):
+def details(request, id, slug):
     context = {
-       'course': Course.objects.get(pk=course_id)
+       'course': get_object_or_404(Course, pk=id)
     }
     template_path = "courses/details.djhtml"
     return render(request, template_path, context)
 
 @login_required
-def register(request, course_id):
+def register(request, id, slug):
     if request.POST:
-        course = Course.objects.get(pk=course_id)
+        course = get_object_or_404(Course, pk=id)
         StudentCourse.objects.create(student=request.user, course=course, invite_reason = 'automated', paid=False)
         return redirect('/students')
     context = {
-       'course': Course.objects.get(pk=course_id)
+       'course': get_object_or_404(Course, pk=id)
     }
     template_path = "courses/register.djhtml"
     return render(request, template_path, context)

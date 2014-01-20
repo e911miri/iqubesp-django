@@ -43,7 +43,7 @@
         <div class="container">
 
             <a class="logo" href="/" style="font-size: 2.3em">
-                Skill Development Platform [sdp]
+                <img src="{% static "clear/img/logo.png" %}" alt="SDP" />
             </a>
             <div class="row">
                 <div class="span8">
@@ -108,7 +108,7 @@
             <div class="row">
                 <div class="span2">
                     <a class="logo" href="/" style="font-size: 2.3em">
-                        Iqube
+                        iQube
                     </a>
                 </div>
                 <div class="span10">
@@ -146,7 +146,7 @@
                         </li>
                     </ul>
                     <!-- END SOCIAL NAVIGATION -->
-                    <small>© Copyright 2014 by <a href="#">IQube Labs</a>. All Rights Reserved.</small>
+                    <small>© Copyright 2014 by <a href="#">iQube Labs</a>. All Rights Reserved.</small>
                 </div>
             </div>
             <div class="gap gap-small"></div>
