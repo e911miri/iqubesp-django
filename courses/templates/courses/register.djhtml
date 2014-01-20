@@ -12,7 +12,13 @@
     <strong>GTBank Account Name: Oyedele Oluwadetan<br>
         Account Number: 491/450555/1590 (Regular) or 0037165472 (NUBAN) </strong></li>
 		<li>Send an email to <br><a href="mailto:detan.oyedele@gmail.com">detan.oyedele@gmail.com</a> indicating your interest in any course(s) you have paid for and your proposed start date</li>
+		<li>Fill the Form Below</li>
 	</ol>
+	<form method="POST" action="/courses/{{course.id}}/{{course.slug}}/register" role="form" class="span5 well">
+		<label>Course Name</label>
+		<input class="" value="{{course.name}}" disabled="disabled" />
+		<input class="btn btn-success form-control" type="submit" value="I have paid, Please register me" />
+	</form>
 	{%endif%}
 </div>
 {% else %}
