@@ -24,7 +24,7 @@
                     <li>
                         <img src="{% static "clear/img/sdpBG.jpg" %}" alt="Image Alternative text" title="Gamer Chick" />
                         <div class="ei-title">
-                    		<h2>Intersted?</h2>
+                    		<h2>Interested?</h2>
                             <h3>Big Data Analysis</h3>
                             <div class="row">
                             	<a href="/courses/1/register" class="span2 pull-right btn btn-primary">Register Now</a>
