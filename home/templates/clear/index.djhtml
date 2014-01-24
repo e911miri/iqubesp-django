@@ -179,40 +179,6 @@
                     	{% endfor %}
                         
                     </div>
-                    <div class="wilto-slide row-fluid row-wrap">
-                        {% for student in students %}
-                           <div class="span4">
-                                <div class="testimonial testimonial-color">
-                                    <div class="inner">
-                                        <blockquote>
-                                            <p>{{student.testimony}}</p>
-                                        </blockquote>
-                                    </div>
-                                    <div class="author">
-                                        <img src="{{student.image.url}}" alt="Image Alternative text" title="Bubbles" />
-                                        <p class="name">{{student.name}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                    <div class="wilto-slide row-fluid row-wrap">
-                        {% for student in students %}
-                           <div class="span4">
-                                <div class="testimonial testimonial-color">
-                                    <div class="inner">
-                                        <blockquote>
-                                            <p>{{student.testimony}}</p>
-                                        </blockquote>
-                                    </div>
-                                    <div class="author">
-                                        <img src="{{student.image.url}}" alt="Image Alternative text" title="Bubbles" />
-                                        <p class="name">{{student.name}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
                 </div>
             </div>
             <!-- END CONTENT SLIDER -->
